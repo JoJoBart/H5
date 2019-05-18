@@ -1,0 +1,165 @@
+@import 'animates2.css';
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.box {
+  width: 100%;
+  height: 100%;
+}
+.box .bg_img {
+  width: 100%;
+  height: 100%;
+  background: url(../img/23.png) no-repeat center center;
+  background-size: cover;
+  animation: bgOut 1s 19.5s linear both;
+}
+.box .bg_img .first_page {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  animation: firstPageOut 20s both;
+}
+.box .bg_img .first_page .ganen {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.box .bg_img .first_page .ganen img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: fadeOut 5s both;
+}
+.box .bg_img .first_page .con_content {
+  width: 100%;
+  height: 15%;
+  background: #fff;
+  border-top: 1.5px solid #999;
+  border-bottom: 1.5px solid #999;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: c_block_in 10s 4s both;
+  position: absolute;
+  opacity: 0;
+}
+.box .bg_img .first_page .con_content .con_one,
+.box .bg_img .first_page .con_content .con_two {
+  position: absolute;
+  top: 10%;
+  width: 100%;
+}
+.box .bg_img .first_page .con_content .con_one img,
+.box .bg_img .first_page .con_content .con_two img {
+  float: left;
+  width: 19%;
+  margin-left: 2rem;
+}
+.box .bg_img .first_page .con_content .con_one .content,
+.box .bg_img .first_page .con_content .con_two .content {
+  float: left;
+  width: 65%;
+  margin-top: 1.1rem;
+  margin-left: 1rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+}
+.box .bg_img .first_page .con_content .con_one .content p:nth-child(2),
+.box .bg_img .first_page .con_content .con_two .content p:nth-child(2) {
+  margin-top: 0.5rem;
+}
+.box .bg_img .first_page .con_content .con_one {
+  animation: memoryOut 2s 7s linear both;
+  opacity: 0;
+}
+.box .bg_img .first_page .con_content .con_one img {
+  animation: memoryIn 1.4s 5s forwards;
+  opacity: 0;
+}
+.box .bg_img .first_page .con_content .con_one p:nth-child(1) {
+  animation: memoryIn 1s 5s forwards;
+  opacity: 0;
+}
+.box .bg_img .first_page .con_content .con_one p:nth-child(2) {
+  margin-top: 0.5rem;
+  animation: memoryIn 1.5s 5s forwards;
+  opacity: 0;
+}
+.box .bg_img .first_page .con_content .con_two {
+  animation: memoryIn 1s 9s linear, memoryOut 3s 12s linear both;
+  opacity: 0;
+}
+.box .bg_img .first_page .con_content .con_two img {
+  animation: memoryIn 3s 9s forwards;
+  opacity: 0;
+}
+.box .bg_img .first_page .con_content .con_two p:nth-child(1) {
+  animation: memoryIn 1s 9s forwards;
+  opacity: 0;
+}
+.box .bg_img .first_page .con_content .con_two p:nth-child(2) {
+  margin-top: 0.5rem;
+  animation: memoryIn 2s 9s forwards;
+  opacity: 0;
+}
+.box .bg_img .second_page {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 99;
+}
+.box .bg_img .second_page .musicImg {
+  right: 7%;
+  position: absolute;
+  top: 5%;
+  opacity: 0;
+  animation: musicicon 1s 14s linear both;
+}
+.box .bg_img .second_page .musicImg img {
+  width: 2rem;
+}
+.box .bg_img .second_page #myContent {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  text-align: center;
+  font-size: 2rem;
+  animation: txtOut 1s 19s both;
+  color: #fff;
+}
+.box .bg_img .third_page {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  animation: thirdPageIn 1s 20s;
+}
+.box .bg_img .third_page img {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+.box .bg_img .arror {
+  width: 3rem;
+  height: 3rem;
+  left: 50%;
+  position: absolute;
+  bottom: 5%;
+  transform: translate(-50%, -50%);
+  animation: moving 3s linear 1s infinite;
+  opacity: 0;
+}
+.box .bg_img .arror img {
+  width: 3rem;
+}
+/*# sourceMappingURL=index.css.map */

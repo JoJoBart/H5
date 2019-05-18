@@ -1,0 +1,201 @@
+@import './animates2.css';
+
+.wh() {
+  width: 100%;
+  height: 100%;
+}
+
+html,
+body {
+  .wh();
+}
+
+.box {
+  .wh();
+
+  //  背景图片
+  .bg_img {
+    .wh();
+    background: url(../img/23.png) no-repeat center center;
+    background-size: cover;
+    animation: bgOut 1s 19.5s linear both;
+
+    // 第一页
+    .first_page {
+      .wh();
+      position: relative;
+      animation: firstPageOut 20s both;
+
+      // 感恩文字
+      .ganen {
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        img {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          animation: fadeOut 5s both;
+        }
+      }
+
+      // 感恩后面的出现的文字
+      .con_content {
+        width: 100%;
+        height: 15%;
+        background: #fff;
+        position: absolute;
+        border-top: 1.5px solid #999;
+        border-bottom: 1.5px solid #999;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: c_block_in 10s 4s both;
+        position: absolute;
+        opacity: 0;
+
+        .con_one,
+        .con_two {
+          position: absolute;
+          top: 10%;
+          width: 100%;
+
+          img {
+            float: left;
+            width: 19%;
+            margin-left: 2rem;
+          }
+
+          .content {
+            float: left;
+            width: 65%;
+            margin-top: 1.1rem;
+            margin-left: 1rem;
+            letter-spacing: 1px;
+            font-weight: 500;
+
+            p:nth-child(2) {
+              margin-top: 0.5rem;
+            }
+          }
+        }
+
+        .con_one {
+          animation: memoryOut 2s 7s linear both;
+          opacity: 0;
+
+          img {
+            animation: memoryIn 1.4s 5s forwards;
+            opacity: 0;
+          }
+
+          p:nth-child(1) {
+            animation: memoryIn 1s 5s forwards;
+            opacity: 0;
+          }
+
+          p:nth-child(2) {
+            margin-top: 0.5rem;
+            animation: memoryIn 1.5s 5s forwards;
+            opacity: 0;
+          }
+        }
+
+        .con_two {
+          // animation: memoryIn 1s 13s linear, memoryOut 3s 16s both;
+          animation: memoryIn 1s 9s linear, memoryOut 3s 12s linear both;
+          opacity: 0;
+
+          img {
+            animation: memoryIn 3s 9s forwards;
+            opacity: 0;
+
+          }
+
+          p:nth-child(1) {
+            animation: memoryIn 1s 9s forwards;
+            opacity: 0;
+          }
+
+          p:nth-child(2) {
+            margin-top: 0.5rem;
+            animation: memoryIn 2s 9s forwards;
+            opacity: 0;
+          }
+        }
+      }
+
+
+    }
+
+    // 第二页
+    .second_page {
+      .wh();
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 99;
+
+      .musicImg {
+        right: 7%;
+        position: absolute;
+        top: 5%;
+        opacity: 0;
+        animation: musicicon 1s 14s linear both;
+
+        img {
+          width: 2rem;
+        }
+      }
+
+      #myContent {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 999;
+        text-align: center;
+        font-size: 2rem;
+        animation: txtOut 1s 19s both;
+        color: #fff;
+      }
+    }
+
+    // 第三页
+    .third_page {
+      .wh();
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      animation: thirdPageIn 1s 20s;
+      img {
+        .wh();
+        opacity: 1;
+        // display: none;
+        
+        // z-index:10000;
+      }
+    }
+
+    // 箭头
+    .arror {
+      width: 3rem;
+      height: 3rem;
+      left: 50%;
+      position: absolute;
+      bottom: 5%;
+      transform: translate(-50%, -50%);
+      animation: moving 3s linear 1s infinite;
+      opacity: 0;
+
+      img {
+        width: 3rem;
+      }
+
+    }
+  }
+}

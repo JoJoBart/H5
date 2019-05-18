@@ -1,0 +1,151 @@
+/* 感恩出现 */
+@keyframes fadeOut {
+  0% {
+    width: 70%;
+    height: 70%;
+    opacity: 0;
+  }
+
+  50% {
+    width: 40%;
+    height: 40%;
+    opacity: 1;
+  }
+
+  100% {
+    width: 40%;
+    height: 40%;
+    opacity: 0;
+  }
+}
+
+
+/* // 感恩消失要出现的文字 */
+@keyframes c_block_in {
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  
+  90% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes c_block_out {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* // 我在寸照一段记忆  */
+@keyframes memoryIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes memoryOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* // 让第一个页面消失的动画 */
+@keyframes firstPageOut {
+  0% {
+    opacity: 1;
+  }
+
+  90% {
+    opacity: 0.9;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+/* // 音乐图标 */
+@keyframes musicicon {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+/* 亲爱的爸爸妈妈 */
+@keyframes txtOut{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+
+/* 第三页的背景图进入 */
+
+@keyframes thirdPageIn{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+
+
+
+/* 纯色背景图消失 */
+
+@keyframes bgOut{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
+/* // 箭头 */
+@keyframes moving {
+  0% {
+    opacity: 0.9;
+    transform: translate(-25px, 0px);
+    -webkit-transform: translate(-25px, 0px);
+
+  }
+
+
+  100% {
+    opacity: 0;
+    transform: translate(-25px, -20px);
+    -webkit-transform: translate(-25px, -20px);
+  }
+}
